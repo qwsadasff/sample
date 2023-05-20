@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  height: 100vh;
+  padding-top: 10px;
+}
+
+.navv {
+  margin: 5px 100px 0 0;
+  padding: 10px;
+}
+
+/* for navnbar logo */
+.log img {
+  width: 5%;
+  height: auto;
+  position: absolute;
+  margin: 4px 0 0 50px;
+}
+
+.nav-item a {
+  color: rgb(5, 253, 237);
+  font-size: 1.5em;
+  font-weight: 400;
+  font-family: 'DM Sans', sans-serif;
+
+}
+
+.nav-item a:hover {
+  color: rgb(254, 66, 3);
+  background-color: rgb(126, 166, 194);
+  border-radius: 20px;
+}
+
+.header {
+  position: relative;
+}
+
+/* my image */
+.header img {
+  position: absolute;
+  width: 30%;
+  height: auto;
+  border-radius: 50%;
+  margin: -80px 0 0 40px;
+  z-index: 1;
+}
+
+/* for my name/animation */
+.content {
+  position: relative;
+}
+
+.content h2 {
+  color: #fff;
+  font-size: 3.5em;
+  left: 40%;
+  top: 130px;
+  font-weight: 800;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  font-family: Copperplate, Papyrus, fantasy;
+  z-index: 1;
+}
+
+.content h2:nth-child(1) {
+  color: transparent;
+  -webkit-text-stroke: 1px #f40303;
+}
+
+.content h2:nth-child(2) {
+  color: #03a9f4;
+  animation: animate 4s ease-in-out infinite;
+}
+
+@keyframes animate {
+
+  0%,
+  100% {
+    clip-path: polygon(0% 45%,
+        16% 44%,
+        33% 50%,
+        54% 60%,
+        70% 61%,
+        84% 59%,
+        100% 52%,
+        100% 100%,
+        0% 100%);
+  }
+
+  50% {
+    clip-path: polygon(0% 60%,
+        15% 65%,
+        34% 66%,
+        51% 62%,
+        67% 50%,
+        84% 45%,
+        100% 46%,
+        100% 100%,
+        0% 100%);
+  }
+}
+
+
+/* for citation text */
+.des cite {
+  color: rgb(255, 253, 252);
+  position: absolute;
+  font-family: Copperplate, Papyrus, fantasy;
+  font-size: 1.5em;
+  font-weight: 800;
+  line-height: 1.8;
+  top: 190px;
+  left: 26%;
+  z-index: 1;
+}
+
+.footer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  margin-top: 37%;
+}
+
+.footer img {
+  position: relative;
+  width: 5%;
+  height: auto;
+  margin-right: 50px;
+
+}
+
+.footer p {
+  color: #03a9f4;
+  font-weight: 400;
+  font-size: 1.2em;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
